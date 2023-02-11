@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="darkMode">
+        <div class="icon">*)</div>
+    </div>
+    <div class="circle"></div>
+    <div class="snow">
+        <span style="--i:11"></span>
+        <span style="--i:12"></span>
+        <span style="--i:13"></span>
+        <span style="--i:15"></span>
+        <span style="--i:16"></span>
+        <span style="--i:26"></span>
+        <span style="--i:36"></span>
+        <span style="--i:46"></span>
+        <span style="--i:56"></span>
+        <span style="--i:66"></span>
+        <span style="--i:23"></span>
+        <span style="--i:29"></span>
+        <span style="--i:52"></span>
+        <span style="--i:42"></span>
+        <span style="--i:41"></span>
+        <span style="--i:57"></span>
+        <span style="--i:58"></span>
+        <span style="--i:27"></span>
+        <span style="--i:72"></span>
+        <span style="--i:91"></span>
+        <span style="--i:11"></span>
+        <span style="--i:12"></span>
+        <span style="--i:13"></span>
+        <span style="--i:15"></span>
+        <span style="--i:16"></span>
+        <span style="--i:26"></span>
+        <span style="--i:36"></span>
+        <span style="--i:46"></span>
+        <span style="--i:56"></span>
+        <span style="--i:66"></span>
+        <span style="--i:23"></span>
+        <span style="--i:29"></span>
+        <span style="--i:52"></span>
+        <span style="--i:42"></span>
+        <span style="--i:41"></span>
+        <span style="--i:57"></span>
+        <span style="--i:58"></span>
+        <span style="--i:27"></span>
+        <span style="--i:72"></span>
+        <span style="--i:91"></span>
+    </div>
+
+    <div class="container">
+        <div class="calc">
+            <form name="form">
+                <input type="text" class="textView" name="textView">
+            </form>
+            <table>
+                <tr>
+                    <td><button class="btn-operator" id="clear" onclick="c()">C</button></td>
+                    <td><button class="btn-operator" id="/" onclick="insert('/')">&divide;</button></td>
+                    <td><button class="btn-operator" id="*" onclick="insert('*')">&times;</button></td>
+                    <td><button class="btn-operator" id="backspace" onclick="del()">Del</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn-number" id="7" onclick="insert(7)">7</button></td>
+                    <td><button class="btn-number" id="8" onclick="insert(8)">8</button></td>
+                    <td><button class="btn-number" id="9" onclick="insert(9)">9</button></td>
+                    <td><button class="btn-operator" id="-" onclick="insert('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn-number" id="4" onclick="insert(4)">4</button></td>
+                    <td><button class="btn-number" id="5" onclick="insert(5)">5</button></td>
+                    <td><button class="btn-number" id="6" onclick="insert(6)">6</button></td>
+                    <td><button class="btn-operator" id="+" onclick="insert('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn-number" id="1" onclick="insert(1)">1</button></td>
+                    <td><button class="btn-number" id="2" onclick="insert(2)">2</button></td>
+                    <td><button class="btn-number" id="3" onclick="insert(3)">3</button></td>
+                    <td rowspan="2"><button class="btn-equal" id="equal" onclick="equal()">=</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button class="btn-number btn-two" id="0" onclick="insert(0)">0</button></td>
+                    <td><button class="btn-operator" id="," onclick="insert(',')">,</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

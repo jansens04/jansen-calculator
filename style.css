@@ -38,20 +38,6 @@ body {
   }
 }
 
-.darkMode {
-  position: absolute;
-  right: 0;
-  margin-right: 3rem;
-  cursor: pointer;
-}
-.icon {
-  width: 70px;
-  height: 70px;
-  color: #fff;
-  font-size: 3em;
-  text-align: center;
-  transform: rotate(88deg);
-}
 
 .calc {
   box-shadow: 0px 0px 20px #fff;
